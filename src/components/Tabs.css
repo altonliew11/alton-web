@@ -1,0 +1,174 @@
+.content-container {
+    position: relative;
+    border: solid #FFB642;
+    border-width: 3px 0;
+    width: 95vw;
+    height: 90vh;
+    left: 2.5%;
+    top: 4.5%;
+}
+
+.content-container::before{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #FFB642, #151207, transparent 25%, transparent 89%, #FFB642);
+    top: 0;
+}
+
+.content-container::after{
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #FFB642, #151207, transparent 25%, transparent 89%, #FFB642);
+    top: 0;
+    right: 0;
+}
+
+.tabs-container {
+    position: absolute;
+    bottom: -4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    color: #FFB642;
+    font-family: "Light";
+    box-sizing: border-box;
+}
+
+.tabs-button {
+    font-size: 60px;
+    margin: 0 65px;
+    position: relative;
+    z-index: 2;
+    background-color: #151207;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: block;
+}
+
+.tabs-button.active {
+    outline: solid;
+    outline-color: #FFB642;
+    background-color: #ff9742;
+    color: #ffd642;
+}
+
+.tabs-button:hover {
+    outline: solid;
+    outline-color: #FFB642;
+}
+
+.tabs-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    color: #FFB642;
+    padding: 10px;
+}
+
+.tab-pane {
+    width: 100%;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1700px) {
+    .tabs-container {
+        bottom: -3rem;
+    }
+    .tabs-button {
+        font-size: 40px;
+        margin: 0 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1540px) {
+    .tabs-content {
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    .tabs-container {
+        bottom: -3rem;
+    }
+    .tabs-button {
+        font-size: 35px;
+        margin: 0 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .tabs-container {
+        bottom: -2.7rem;
+    }
+
+    .tabs-button {
+        font-size: 30px;
+        margin: 0 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs-container {
+        bottom: -2.52rem;
+    }
+
+    .tabs-button {
+        font-size: 25px;
+        margin: 0 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tabs-container {
+        bottom: -2rem;
+    }
+
+    .tabs-button {
+        font-size: 17px;
+        margin: 0 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tabs-container {
+        bottom: -2.1rem;
+    }
+
+    .tabs-button {
+        font-size: 15px;
+        margin: 0 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 410px) {
+    .tabs-container {
+        bottom: -2.1rem;
+    }
+
+    .tabs-button {
+        font-size: 17px;
+        margin: 0 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

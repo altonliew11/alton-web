@@ -1,0 +1,100 @@
+.statsbar-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: max-content;
+    max-width: 100%;
+    text-align: right;
+}
+
+.statsbar-container li {
+    position: relative;
+    float: right;
+    font-family: "light";
+    font-size: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+}
+
+.spacerXP {
+    margin-left: 300px;
+}
+
+.spacer {
+    margin-left: 100px;
+}
+
+.XP::before {
+    content: "";
+    position: absolute;
+    background-color: #151207;
+    width: 20px;
+    height: 5px;
+    top: -4px;
+    left: -10px;
+}
+
+.AP::before {
+    content: "";
+    position: absolute;
+    background-color: #151207;
+    width: 20px;
+    height: 5px;
+    top: -4px;
+    left: -10px;
+}
+
+.AP::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -2px;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(180deg, #FFB642, transparent);
+}
+
+.HP::before {
+    content: "";
+    position: absolute;
+    background-color: #151207;
+    width: 20px;
+    height: 5px;
+    top: -4px;
+    left: -10px;
+}
+
+.HP::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -2px;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(180deg, #FFB642, transparent);
+}
+
+.LVL::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -2px;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(180deg, #FFB642, transparent);
+}
+
+@media (max-width: 2000px) {
+    .statsbar-container li{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1750px) {
+    .statsbar-container li{
+        font-size: 40px;
+    }
+}
+
+

@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+body, html {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #151207;
+}
+
+.text{
+  color: #FFB642;
+  font-size: 100px;
+  font-family: "Light";
+}
+
+.amber-tint {
+  filter: sepia(1) saturate(20) hue-rotate(-45deg) opacity(1);
+}
